@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en"></html>
+<title>MoonHomePage</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="reset" href="reset.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/ae355807dd.js" crossorigin="anonymous"></script>
+</head>
+
+
+<style>
+
+    /* reset css*/
+    
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 1;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    } 
+    
+    /* sfarsit css reset*/
+    
+    
+    
+    
+    /* declaratii generale*/
+    
+    html{
+      font-size: 20px;
+      font-family:  'Roboto', sans-serif;
+    }
+    * {box-sizing: border-box;}
+
+
+
+/* navigatia*/
+
+.navbar{
+    background-color: black;
+}
+
+.navbar{
+  overflow: hidden;
+}
+  .navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:#802000;
+  text-decoration: underline;
+  color:black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:black;
+  min-width: 160px;
+  box-shadow: 0px 10px 25px 10px #802000;
+  border:1px solid #802000;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color:white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #802000;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+/* prima pagina*/
+.hero{height:93vh; background-image: url(moon-2762111.jpg); background-size: cover; position: relative;
+}
+   .top-right >h1  {font-style: italic; text-shadow: 1px 1px  #802000; color: white; text-align: right; }
+     .top-right >p{ font-weight: 300; color: white; text-shadow: 1px 1px  #802000; text-align: right;
+
+     } 
+
+     .top-right {
+      position: absolute;
+      top: 60px;
+      right: 30px;
+      box-shadow: 0px 10px 15px 10px #802000;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    
+
+
+    /* Responsive layout  */
+@media (max-width: 500px) {
+  .top-right {
+    position: absolute;
+    top: 70vh;
+    bottom: 8px;
+    left: 16px;
+    height: 6rem;}
+
+}
+
+@media (max-width: 1200px) {
+  .top-right {
+    position: absolute;
+    top: 70vh;
+    bottom: 8px;
+    left: 16px;
+    height: 6rem;
+    width: 20rem;}
+
+}
+
+</style>
+
+
+
+<body>
+<header>
+    
+   
+   <nav class="navbar">
+       <a href="#">Acasa</a>
+      <!--al doilea element din navigtia noastra-->
+       <div class="dropdown">
+        <button class="dropbtn">Despre</button>
+             <div class="dropdown-content">
+             <a href="#cv">CV</a>
+             <a href="#pasiuni">Pasiuni</a> 
+            </div>
+      </div>
+<!--al treilea element din navigtia noastra-->
+      <div class="dropdown">
+          <button class="dropbtn">Proiecte </button>
+          <div class="dropdown-content">
+            <a href="#cards">Proiect1</a>
+            <a href="#formulare">Proiect2</a>
+            <a href="#butoane">Proiect3</a>
+            <a href="#galerie">Proiect4</a>
+           </div>
+        </div>
+<!--al patrulea element din navigtia noastra-->
+          <a href="#contact">Contacte</a>
+   </nav>
+ </header>
+
+  
+ <!--imagine fundal prima pagina-->
+ <section class="hero"> 
+         
+          <div class="top-right">
+         
+              <h1> 
+            "Miliarde de ani i-a trebuit naturii 
+             <br> pentru ca noi astazi sa ne bucuram <br>de furmusetea momentului prezent"
+              </h1>
+              <br>
+              <p>Ivasco Ion</p>
+            </div>
+</section>
+
+</body>
+</html>
